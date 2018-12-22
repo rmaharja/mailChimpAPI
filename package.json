@@ -1,0 +1,20 @@
+{
+  "name": "mailchimp",
+  "version": "1.0.0",
+  "description": "MailChimp App",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "Mailchimp"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "express": "^4.16.4",
+    "superagent": "^4.0.0"
+  }
+}
