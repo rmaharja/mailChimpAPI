@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function(){
-  console.log("Document is Ready Yo")
+  console.log("Document is Ready Yo");
 
   document.getElementById("user-posts").addEventListener("submit", userPost);
 

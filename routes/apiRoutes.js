@@ -1,8 +1,8 @@
 const request = require("superagent");
 
-const apiKey = "b9ecd2fe4f4aa9922f6e16ffef08261e-us7";
 const instance = "us7";
 const listUnqueId = "80eab11220"
+require("dotenv").config();
 
 module.exports = function (app) {
 
@@ -17,6 +17,8 @@ module.exports = function (app) {
   })//end of post
 
 function addNewEmailToMailChimp(email, res) {
+  let apiKey = process.env.API_KEY
+
   request
     .post(`https://${instance}.api.mailchimp.com/3.0//lists/${listUnqueId}/members/`)
     .set("Content-Type", "application/json;charset=utf-8")
